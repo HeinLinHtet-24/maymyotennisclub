@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base / 
+
+    This is a placeholder for base href that will be replaced by the value of https://HeinLinHtet-24.github.io
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="https://HeinLinHtet-24.github.io/maymyotennisclub/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="maymyotennisweb">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="tennis.png"/>
+
+  <title>maymyotennis</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = '1260951558';
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+   <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+  apiKey: "AIzaSyAtUmeMsqlx9Cqq0Lch3cb2fQKB5i1aisI",
+  authDomain: "maymyo-tennis-30a6c.firebaseapp.com",
+  projectId: "maymyo-tennis-30a6c",
+  storageBucket: "maymyo-tennis-30a6c.appspot.com",
+  messagingSenderId: "581028116743",
+  appId: "1:581028116743:web:ff34f820b7187002eaada2",
+  measurementId: "G-XQWNLCGNKE"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>
